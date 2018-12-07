@@ -31,7 +31,7 @@ module.exports = function(env) {
       index: './src/index.ts'
     },
     output: {
-      path: dir('release'),
+      path: dir('release/umd'),
       libraryTarget: 'umd',
       library: 'ngx-charts',
       umdNamedDefine: true

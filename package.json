@@ -2,8 +2,8 @@
   "name": "@swimlane/ngx-charts",
   "version": "10.0.0",
   "description": "Declarative Charting Framework for Angular2 and beyond!",
-  "main": "release/index.js",
-  "module": "release/esm.js",
+  "main": "release/umd/index.js",
+  "module": "release/esm/esm.js",
   "typings": "release/index.d.ts",
   "scripts": {
     "check": "npm-check --skip-unused",
@@ -19,6 +19,7 @@
     "clean:dist": "rimraf dist",
     "clean:release": "rimraf release",
     "build": "webpack --display-error-details && npm run build:esm",
+    "build:umd": "cross-env NODE_ENV=package webpack --display-error-details",
     "build:release": "cross-env NODE_ENV=production npm run build",
     "build:package": "cross-env NODE_ENV=package npm run build",
     "build:ts": "tsc",

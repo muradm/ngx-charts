@@ -19,7 +19,7 @@ const htmlMinOpts = {
 module.exports = {
   input: './src/index.ts',
   output: {
-    file: 'release/esm.js',
+    file: 'release/esm/esm.js',
     format: 'esm'
   },
   external: externalLibs,
